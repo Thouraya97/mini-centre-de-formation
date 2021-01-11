@@ -1,0 +1,33 @@
+<h3>ajouter formation</h3>
+<div class="container" >
+    <form  #iformation="ngForm" (ngSubmit)="onSubmit(iformation)" style="margin-top: 50px; width: 600px;  margin-left: auto;margin-right: auto;" >
+            <div class="form-group ">
+             
+              <input type="text"  class="form-control" id="titre" placeholder="Titre" name="titre" ngModel required #titre="ngModel">
+            </div>
+            <div class="form-group ">
+             
+              <input type="text" class="form-control" id="desc"  placeholder="Description" name="desc" ngModel required #desc="ngModel">
+            </div>
+            <div class="form-group ">
+             
+                <input type="number" class="form-control" id="nbrh"  placeholder="nombre des heures" name="nbrh" ngModel required #nbrh="ngModel">
+              </div>
+              <div class="form-group ">
+             
+                <input type="file"  id="plannig"  placeholder="programme" name="plannig" ngModel required #plannig="ngModel">
+              </div>
+              <div class="form-group ">
+             
+                <input type="text" class="form-control" id="niveau"  placeholder="niveau" name="niveau" ngModel required #niveau="ngModel">
+              </div>
+             
+              
+              <div class="form-group ">
+             
+                <input type="text" class="form-control" id="motClee"  placeholder="mote Clée" name="motClee" ngModel required #motClee="ngModel">
+              </div>
+             
+            <button type="submit" class="btn btn-primary mb-2" >connexion</button>
+          </form>
+        </div>

@@ -1,0 +1,8 @@
+
+<p class="text-primary">
+Bienvenue dans notre centre de formation
+ </p>
+<ul *ngFor="let item of itemFormation">
+  <li class="text-success"><a routerLink="/detailsformations/{{item.id}}"><button class="btn">{{item.titre}}</button></a></li> 
+</ul>
+<router-outlet></router-outlet>
